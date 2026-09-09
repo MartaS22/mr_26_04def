@@ -1,0 +1,5 @@
+[0.089s] Invoking command in '/ros_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --build /ros_ws/build/turtlebot3_gazebo -- -j12 -l12
+[0.763s] [ 25%] Built target obstacles
+[0.763s] [ 50%] Built target turtlebot3_drive
+[0.764s] [ 75%] Built target obstacle2
+[0.764s] [100%] Built target obstacle1

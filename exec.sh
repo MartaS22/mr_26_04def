@@ -1,0 +1,1 @@
+docker exec -it ros2_maze_container bash

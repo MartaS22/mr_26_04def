@@ -1,0 +1,2 @@
+[console_scripts]
+maze_solver = turtlebot_logic.maze_solver:main

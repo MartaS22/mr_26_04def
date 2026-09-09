@@ -1,0 +1,938 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="maze_world">
+    <!-- Plugin fondamentali per Gazebo Harmonic -->
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"></plugin>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"></plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"></plugin>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+ 
+    <!-- Luce solare -->
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+ 
+    <!-- Pavimento -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.8 0.8 0.8 1</ambient><diffuse>0.8 0.8 0.8 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+ 
+    <!-- Mura perimetrali -->
+     <!-- Mura perimetrali -->
+    <model name="boundary_north">
+      <static>true</static><pose>8 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.1 16 1</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.1 16 1</size></box></geometry>
+          <material>
+            <ambient>0.6 0.6 0.6 1.0</ambient>
+            <diffuse>0.6 0.6 0.6 1.0</diffuse>
+            <emissive>0.6 0.6 0.6 1.0</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+ 
+    <model name="boundary_south">
+      <static>true</static><pose>-8 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.1 16 1</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>0.1 16 1</size></box></geometry>
+          <material>
+            <ambient>0.6 0.6 0.6 1.0</ambient>
+            <diffuse>0.6 0.6 0.6 1.0</diffuse>
+            <emissive>0.6 0.6 0.6 1.0</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+ 
+    <model name="boundary_east">
+      <static>true</static><pose>0 8 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>16 0.1 1</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>16 0.1 1</size></box></geometry>
+          <material>
+            <ambient>0.6 0.6 0.6 1.0</ambient>
+            <diffuse>0.6 0.6 0.6 1.0</diffuse>
+            <emissive>0.6 0.6 0.6 1.0</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+ 
+    <model name="boundary_west">
+      <static>true</static><pose>0 -8 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>16 0.1 1</size></box></geometry></collision>
+        <visual name="visual">
+          <geometry><box><size>16 0.1 1</size></box></geometry>
+          <material>
+            <ambient>0.6 0.6 0.6 1.0</ambient>
+            <diffuse>0.6 0.6 0.6 1.0</diffuse>
+            <emissive>0.6 0.6 0.6 1.0</emissive>
+          </material>
+        </visual>
+      </link>
+    </model>
+ 
+ 
+    <model name="muro_interno_1">
+ 
+      <static>true</static><pose>-6.4 4.8 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 6.4 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 6.4 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_2">
+ 
+      <static>true</static><pose>-6.4 -3 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 6.4 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 6.4 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_3">
+ 
+      <static>true</static><pose>-4.8 4.8 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 3.2 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 3.2 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_4">
+ 
+      <static>true</static><pose>-4.8 0.8 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 1.6 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 1.6 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_5">
+ 
+      <static>true</static><pose>-5.6 1.62 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>1.7 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>1.7 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+   
+ 
+    <model name="muro_interno_6">
+ 
+      <static>true</static><pose>-5.6 -6.2 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>4.8 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>4.8 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_7">
+ 
+      <static>true</static><pose>-4.8 -1.6 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>3.2 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.2 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_8">
+ 
+      <static>true</static><pose>-3.2 -4.65 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 3.2 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 3.2 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_9">
+ 
+      <static>true</static><pose>-4 3.2 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>1.7 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>1.7 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_10">
+ 
+      <static>true</static><pose>-4 -3 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>1.7 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>1.7 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_11">
+ 
+      <static>true</static><pose>-4.8 -3.8 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 1.6 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 1.6 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_12">
+ 
+      <static>true</static><pose>-4 0 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>1.7 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>1.7 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_13">
+ 
+      <static>true</static><pose>-4 6.4 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>1.7 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>1.7 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+   
+    <model name="muro_interno_14">
+ 
+      <static>true</static><pose>-3.2 1.6 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 3.2 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 3.2 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_15">
+ 
+      <static>true</static><pose>-3.2 5.6 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 1.6 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 1.6 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_16">
+ 
+      <static>true</static><pose>-1.6 4 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 8 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 8 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_17">
+ 
+      <static>true</static><pose>-1.6 -2.4 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 1.6 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 1.6 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_18">
+ 
+      <static>true</static><pose>-1.6 -5.6 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 1.6 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 1.6 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_19">
+ 
+      <static>true</static><pose>-0.85 -1.6 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>1.6 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>1.6 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_20">
+ 
+      <static>true</static><pose>-0.05 -6.4 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>3.2 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.2 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_21">
+ 
+      <static>true</static><pose>0 5.2 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 5.6 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 5.6 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_22">
+ 
+      <static>true</static><pose>0 -4 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 1.6 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 1.6 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_23">
+ 
+      <static>true</static><pose>0.8 -4.8 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>1.7 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>1.7 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_24">
+ 
+      <static>true</static><pose>1.6 6.8 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 2.4 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 2.4 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_25">
+ 
+      <static>true</static><pose>1.6 -0.4 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 8.8 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 8.8 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_26">
+ 
+      <static>true</static><pose>2.4 1.6 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>1.7 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>1.7 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_27">
+ 
+      <static>true</static><pose>3.2 6.4 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 3.2 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 3.2 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_28">
+ 
+      <static>true</static><pose>3.2 -1.6 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 3.2 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 3.2 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_29">
+ 
+      <static>true</static><pose>3.2 -7.2 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 1.6 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 1.6 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_30">
+ 
+      <static>true</static><pose>4.8 3.2 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>3.2 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.2 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_31">
+ 
+      <static>true</static><pose>4.75 -3.2 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>3.2 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.2 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_32">
+ 
+      <static>true</static><pose>4 -4.8 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>1.6 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>1.6 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_33">
+ 
+      <static>true</static><pose>4.75 -6.4 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>3.2 0.1 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.2 0.1 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_34">
+ 
+      <static>true</static><pose>4.8 4 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 1.6 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 1.6 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_36">
+ 
+      <static>true</static><pose>4.8 -1.6 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 3.2 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 3.2 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_37">
+ 
+      <static>true</static><pose>6.4 5.55 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 4.8 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 4.8 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+ 
+    <model name="muro_interno_38">
+ 
+      <static>true</static><pose>6.4 -2.45 0.5 0 0 0</pose>
+ 
+      <link name="link"><collision name="collision"><geometry><box><size>0.1 8 1</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.1 8 1</size></box></geometry><material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material></visual></link>
+ 
+    </model>
+
+       <!-- Chiave 1 (ArUco ID 1) - Marker solo su 2 facce -->
+    <model name="key_1">
+      <static>true</static>
+      <pose>0.8 2.0 0.15 0 0 0</pose>
+      <link name="link">
+        
+        <!-- Collisione fisica del cubo per Nav2 -->
+        <collision name="collision">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+        </collision>
+ 
+        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <visual name="cubo_base">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>0.05 0.05 0.05 1.0</ambient>
+            <diffuse>0.05 0.05 0.05 1.0</diffuse>
+          </material>
+        </visual>
+ 
+        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <visual name="marker_frontale1">
+          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
+          <pose>0.026 0 0 0 0 0</pose>
+          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_1.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_1.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+ 
+        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <visual name="marker_posteriore1">
+          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
+          <pose>-0.026 0 0 0 0 0</pose>
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_1.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_1.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+       <!-- Chiave 2 (ArUco ID 2) - Marker solo su 2 facce -->
+    <model name="key_2">
+      <static>true</static>
+      <pose>7.0 7.0 0.15 0 0 0.78</pose>
+      <link name="link">
+        
+        <!-- Collisione fisica del cubo per Nav2 -->
+        <collision name="collision">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+        </collision>
+ 
+        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <visual name="cubo_base">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>0.05 0.05 0.05 1.0</ambient>
+            <diffuse>0.05 0.05 0.05 1.0</diffuse>
+          </material>
+        </visual>
+ 
+        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <visual name="marker_frontale2">
+          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
+          <pose>0.026 0 0 0 0 0</pose>
+          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_2.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_2.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+ 
+        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <visual name="marker_posteriore2">
+          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
+          <pose>-0.026 0 0 0 0 0</pose>
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_2.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_2.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+       <!-- Chiave 3 (ArUco ID 3) - Marker solo su 2 facce -->
+    <model name="key_3">
+      <static>true</static>
+      <pose>6.0 6.0 0.15 0 0 0</pose>
+      <link name="link">
+        
+        <!-- Collisione fisica del cubo per Nav2 -->
+        <collision name="collision">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+        </collision>
+ 
+        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <visual name="cubo_base">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>0.05 0.05 0.05 1.0</ambient>
+            <diffuse>0.05 0.05 0.05 1.0</diffuse>
+          </material>
+        </visual>
+ 
+        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <visual name="marker_frontale3">
+          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
+          <pose>0.026 0 0 0 0 0</pose>
+          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_3.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_3.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+ 
+        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <visual name="marker_posteriore3">
+          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
+          <pose>-0.026 0 0 0 0 0</pose>
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_3.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_3.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+       <!-- Chiave 4 (ArUco ID 2) - Marker solo su 2 facce -->
+    <model name="key_4">
+      <static>true</static>
+      <pose>-4.0 -6.0 0.15 0 0 1.57</pose>
+      <link name="link">
+        
+        <!-- Collisione fisica del cubo per Nav2 -->
+        <collision name="collision">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+        </collision>
+ 
+        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <visual name="cubo_base">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>0.05 0.05 0.05 1.0</ambient>
+            <diffuse>0.05 0.05 0.05 1.0</diffuse>
+          </material>
+        </visual>
+ 
+        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <visual name="marker_frontale4">
+          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
+          <pose>0.026 0 0 0 0 0</pose>
+          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_4.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_4.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+ 
+        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <visual name="marker_posteriore4">
+          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
+          <pose>-0.026 0 0 0 0 0</pose>
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_4.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_4.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+       <!-- Chiave 5 (ArUco ID 2) - Marker solo su 2 facce -->
+    <model name="key_5">
+      <static>true</static>
+      <pose>6.0 -6.0 0.15 0 0 0</pose>
+      <link name="link">
+        
+        <!-- Collisione fisica del cubo per Nav2 -->
+        <collision name="collision">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+        </collision>
+ 
+        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <visual name="cubo_base">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>0.05 0.05 0.05 1.0</ambient>
+            <diffuse>0.05 0.05 0.05 1.0</diffuse>
+          </material>
+        </visual>
+ 
+        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <visual name="marker_frontale5">
+          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
+          <pose>0.026 0 0 0 0 0</pose>
+          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_5.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_5.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+ 
+        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <visual name="marker_posteriore5">
+          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
+          <pose>-0.026 0 0 0 0 0</pose>
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_5.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_5.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+       <!-- Chiave 6 (ArUco ID 2) - Marker solo su 2 facce -->
+    <model name="key_6">
+      <static>true</static>
+      <pose>-2.0 0 0.15 0 0 0</pose>
+      <link name="link">
+        
+        <!-- Collisione fisica del cubo per Nav2 -->
+        <collision name="collision">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+        </collision>
+ 
+        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <visual name="cubo_base">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>0.05 0.05 0.05 1.0</ambient>
+            <diffuse>0.05 0.05 0.05 1.0</diffuse>
+          </material>
+        </visual>
+ 
+        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <visual name="marker_frontale6">
+          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
+          <pose>0.026 0 0 0 0 0</pose>
+          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_6.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_6.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+ 
+        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <visual name="marker_posteriore6">
+          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
+          <pose>-0.026 0 0 0 0 0</pose>
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_6.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_6.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+       <!-- Chiave 7 (ArUco ID 2) - Marker solo su 2 facce -->
+    <model name="key_7">
+      <static>true</static>
+      <pose>3.0 0 0.15 0 0 1.57</pose>
+      <link name="link">
+        
+        <!-- Collisione fisica del cubo per Nav2 -->
+        <collision name="collision">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+        </collision>
+ 
+        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <visual name="cubo_base">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>0.05 0.05 0.05 1.0</ambient>
+            <diffuse>0.05 0.05 0.05 1.0</diffuse>
+          </material>
+        </visual>
+ 
+        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <visual name="marker_frontale7">
+          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
+          <pose>0.026 0 0 0 0 0</pose>
+          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_7.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_7.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+ 
+        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <visual name="marker_posteriore7">
+          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
+          <pose>-0.026 0 0 0 0 0</pose>
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_7.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_7.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+       <!-- Chiave 8 (ArUco ID 2) - Marker solo su 2 facce -->
+    <model name="key_8">
+      <static>true</static>
+      <pose>-1.0 7.0 0.15 0 0 0</pose>
+      <link name="link">
+        
+        <!-- Collisione fisica del cubo per Nav2 -->
+        <collision name="collision">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+        </collision>
+ 
+        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <visual name="cubo_base">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>0.05 0.05 0.05 1.0</ambient>
+            <diffuse>0.05 0.05 0.05 1.0</diffuse>
+          </material>
+        </visual>
+ 
+        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <visual name="marker_frontale8">
+          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
+          <pose>0.026 0 0 0 0 0</pose>
+          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_8.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_8.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+ 
+        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <visual name="marker_posteriore8">
+          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
+          <pose>-0.026 0 0 0 0 0</pose>
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_8.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_8.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+       <!-- Chiave 9 (ArUco ID 2) - Marker solo su 2 facce -->
+    <model name="key_9">
+      <static>true</static>
+      <pose>-2.0 -4.0 0.15 0 0 1.57</pose>
+      <link name="link">
+        
+        <!-- Collisione fisica del cubo per Nav2 -->
+        <collision name="collision">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+        </collision>
+ 
+        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <visual name="cubo_base">
+          <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>0.05 0.05 0.05 1.0</ambient>
+            <diffuse>0.05 0.05 0.05 1.0</diffuse>
+          </material>
+        </visual>
+ 
+        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <visual name="marker_frontale9">
+          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
+          <pose>0.026 0 0 0 0 0</pose>
+          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_9.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_9.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+ 
+        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <visual name="marker_posteriore9">
+          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
+          <pose>-0.026 0 0 0 0 0</pose>
+          <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
+          <material>
+            <ambient>1.0 1.0 1.0 1.0</ambient>
+            <diffuse>1.0 1.0 1.0 1.0</diffuse>
+            <emissive>1.0 1.0 1.0 1.0</emissive>
+            <pbr>
+              <metal>
+                <albedo_map>package://turtlebot_maze/models/aruco_textures/marker_9.png</albedo_map>
+                <emissive_map>package://turtlebot_maze/models/aruco_textures/marker_9.png</emissive_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+  </world>
+</sdf>
+ 

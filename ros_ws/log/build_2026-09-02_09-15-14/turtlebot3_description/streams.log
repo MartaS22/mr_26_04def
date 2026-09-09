@@ -1,0 +1,62 @@
+[0.097s] Invoking command in '/ros_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /ros_ws/src/turtlebot3/turtlebot3_description -DCMAKE_INSTALL_PREFIX=/ros_ws/install/turtlebot3_description
+[0.622s] -- The C compiler identification is GNU 13.3.0
+[0.902s] -- The CXX compiler identification is GNU 13.3.0
+[0.944s] -- Detecting C compiler ABI info
+[1.157s] -- Detecting C compiler ABI info - done
+[1.178s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.178s] -- Detecting C compile features
+[1.180s] -- Detecting C compile features - done
+[1.197s] -- Detecting CXX compiler ABI info
+[1.418s] -- Detecting CXX compiler ABI info - done
+[1.435s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.436s] -- Detecting CXX compile features
+[1.437s] -- Detecting CXX compile features - done
+[1.496s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.833s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.168s] -- Found urdf: 2.10.1 (/opt/ros/jazzy/share/urdf/cmake)
+[2.334s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[2.569s] -- Configuring done (2.3s)
+[2.579s] -- Generating done (0.0s)
+[2.582s] -- Build files have been written to: /ros_ws/build/turtlebot3_description
+[2.613s] Invoked command in '/ros_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /ros_ws/src/turtlebot3/turtlebot3_description -DCMAKE_INSTALL_PREFIX=/ros_ws/install/turtlebot3_description
+[2.613s] Invoking command in '/ros_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros_ws/build/turtlebot3_description -- -j12 -l12
+[2.693s] Invoked command in '/ros_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros_ws/build/turtlebot3_description -- -j12 -l12
+[2.696s] Invoking command in '/ros_ws/build/turtlebot3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros_ws/build/turtlebot3_description
+[2.717s] -- Install configuration: ""
+[2.717s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes
+[2.718s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases
+[2.718s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/burger_base.stl
+[2.725s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_base.stl
+[2.749s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/bases/waffle_pi_base.stl
+[2.762s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels
+[2.762s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/left_tire.stl
+[2.764s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/wheels/right_tire.stl
+[2.765s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors
+[2.766s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.dae
+[2.766s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.dae
+[2.780s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/r200.jpg
+[2.780s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/astra.jpg
+[2.781s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/meshes/sensors/lds.stl
+[2.782s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/rviz
+[2.782s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/rviz/model.rviz
+[2.783s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/urdf
+[2.783s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/common_properties.urdf
+[2.784s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_burger.urdf
+[2.784s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle_pi.urdf
+[2.785s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_waffle.urdf
+[2.785s] -- Installing: /ros_ws/install/turtlebot3_description/share/ament_index/resource_index/package_run_dependencies/turtlebot3_description
+[2.785s] -- Installing: /ros_ws/install/turtlebot3_description/share/ament_index/resource_index/parent_prefix_path/turtlebot3_description
+[2.786s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.sh
+[2.787s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/environment/ament_prefix_path.dsv
+[2.791s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/environment/path.sh
+[2.791s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/environment/path.dsv
+[2.792s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.bash
+[2.792s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.sh
+[2.793s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.zsh
+[2.793s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/local_setup.dsv
+[2.794s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/package.dsv
+[2.794s] -- Installing: /ros_ws/install/turtlebot3_description/share/ament_index/resource_index/packages/turtlebot3_description
+[2.795s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig.cmake
+[2.796s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/cmake/turtlebot3_descriptionConfig-version.cmake
+[2.796s] -- Installing: /ros_ws/install/turtlebot3_description/share/turtlebot3_description/package.xml
+[2.798s] Invoked command in '/ros_ws/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros_ws/build/turtlebot3_description

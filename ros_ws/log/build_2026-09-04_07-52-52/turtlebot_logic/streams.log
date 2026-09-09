@@ -1,0 +1,19 @@
+[2.910s] Invoking command in '/ros_ws/src/turtlebot_logic': PYTHONPATH=/ros_ws/build/turtlebot_logic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros_ws/install/turtlebot_logic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot_logic build --build-base /ros_ws/build/turtlebot_logic/build install --record /ros_ws/build/turtlebot_logic/install.log --install-scripts $base/lib/turtlebot_logic --single-version-externally-managed install_data
+[3.396s] running egg_info
+[3.434s] writing ../../build/turtlebot_logic/turtlebot_logic.egg-info/PKG-INFO
+[3.435s] writing dependency_links to ../../build/turtlebot_logic/turtlebot_logic.egg-info/dependency_links.txt
+[3.436s] writing requirements to ../../build/turtlebot_logic/turtlebot_logic.egg-info/requires.txt
+[3.436s] writing top-level names to ../../build/turtlebot_logic/turtlebot_logic.egg-info/top_level.txt
+[3.482s] reading manifest file '../../build/turtlebot_logic/turtlebot_logic.egg-info/SOURCES.txt'
+[3.484s] writing manifest file '../../build/turtlebot_logic/turtlebot_logic.egg-info/SOURCES.txt'
+[3.484s] running build
+[3.485s] running build_py
+[3.485s] running install
+[3.496s] running install_lib
+[3.520s] running install_data
+[3.520s] running install_egg_info
+[3.542s] removing '/ros_ws/install/turtlebot_logic/lib/python3.12/site-packages/turtlebot_logic-0.0.0-py3.12.egg-info' (and everything under it)
+[3.542s] Copying ../../build/turtlebot_logic/turtlebot_logic.egg-info to /ros_ws/install/turtlebot_logic/lib/python3.12/site-packages/turtlebot_logic-0.0.0-py3.12.egg-info
+[3.545s] running install_scripts
+[3.718s] writing list of installed files to '/ros_ws/build/turtlebot_logic/install.log'
+[3.777s] Invoked command in '/ros_ws/src/turtlebot_logic' returned '0': PYTHONPATH=/ros_ws/build/turtlebot_logic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros_ws/install/turtlebot_logic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot_logic build --build-base /ros_ws/build/turtlebot_logic/build install --record /ros_ws/build/turtlebot_logic/install.log --install-scripts $base/lib/turtlebot_logic --single-version-externally-managed install_data
