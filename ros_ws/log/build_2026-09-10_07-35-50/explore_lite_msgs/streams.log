@@ -1,0 +1,239 @@
+[0.160s] Invoking command in '/ros_ws/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake /ros_ws/src/m-explore-ros2/explore_lite_msgs -DCMAKE_INSTALL_PREFIX=/ros_ws/install/explore_lite_msgs
+[1.435s] -- The C compiler identification is GNU 13.3.0
+[1.436s] -- The CXX compiler identification is GNU 13.3.0
+[1.436s] -- Detecting C compiler ABI info
+[1.436s] -- Detecting C compiler ABI info - done
+[1.437s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.437s] -- Detecting C compile features
+[1.438s] -- Detecting C compile features - done
+[1.449s] -- Detecting CXX compiler ABI info
+[1.792s] -- Detecting CXX compiler ABI info - done
+[1.814s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.814s] -- Detecting CXX compile features
+[1.816s] -- Detecting CXX compile features - done
+[1.851s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.330s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.927s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[2.976s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.239s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.433s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[5.172s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[7.738s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.662s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.680s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[11.368s] -- Found PythonExtra: /usr/bin/python3  
+[13.407s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[13.577s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[13.606s] -- Configuring done (13.3s)
+[13.726s] -- Generating done (0.1s)
+[13.762s] -- Build files have been written to: /ros_ws/build/explore_lite_msgs
+[13.779s] Invoked command in '/ros_ws/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake /ros_ws/src/m-explore-ros2/explore_lite_msgs -DCMAKE_INSTALL_PREFIX=/ros_ws/install/explore_lite_msgs
+[13.782s] Invoking command in '/ros_ws/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --build /ros_ws/build/explore_lite_msgs -- -j12 -l12
+[13.922s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[13.926s] [  5%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[13.947s] [  5%] Built target ament_cmake_python_copy_explore_lite_msgs
+[14.687s] [  5%] Built target explore_lite_msgs__rosidl_generator_type_description
+[14.693s] running egg_info
+[14.697s] creating explore_lite_msgs.egg-info
+[14.724s] [  8%] [34m[1mGenerating C code for ROS interfaces[0m
+[14.763s] [ 11%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[14.772s] writing explore_lite_msgs.egg-info/PKG-INFO
+[14.772s] writing dependency_links to explore_lite_msgs.egg-info/dependency_links.txt
+[14.775s] writing top-level names to explore_lite_msgs.egg-info/top_level.txt
+[14.779s] writing manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'
+[14.811s] [ 11%] Built target explore_lite_msgs__rs
+[14.940s] reading manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'
+[14.942s] writing manifest file 'explore_lite_msgs.egg-info/SOURCES.txt'
+[15.039s] [ 11%] Built target ament_cmake_python_build_explore_lite_msgs_egg
+[15.582s] [ 11%] Built target explore_lite_msgs__cpp
+[15.687s] [ 17%] [32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_generator_c.dir/rosidl_generator_c/explore_lite_msgs/msg/detail/explore_status__functions.c.o[0m
+[15.687s] [ 17%] [32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_generator_c.dir/rosidl_generator_c/explore_lite_msgs/msg/detail/explore_status__type_support.c.o[0m
+[15.689s] [ 20%] [32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_generator_c.dir/rosidl_generator_c/explore_lite_msgs/msg/detail/explore_status__description.c.o[0m
+[15.818s] [ 22%] [32m[1mLinking C shared library libexplore_lite_msgs__rosidl_generator_c.so[0m
+[15.925s] [ 22%] Built target explore_lite_msgs__rosidl_generator_c
+[15.953s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[15.969s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[15.975s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[15.979s] [ 37%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[15.979s] [ 37%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[15.990s] [ 40%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[16.724s] [ 42%] [32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/explore_lite_msgs/msg/detail/explore_status__type_support.c.o[0m
+[16.815s] [ 45%] [32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/explore_lite_msgs/msg/explore_status__type_support.cpp.o[0m
+[16.862s] [ 48%] [32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/explore_lite_msgs/msg/explore_status__type_support.cpp.o[0m
+[16.909s] [ 51%] [32m[1mLinking C shared library libexplore_lite_msgs__rosidl_typesupport_introspection_c.so[0m
+[16.934s] [ 54%] [32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/explore_lite_msgs/msg/detail/explore_status__type_support.cpp.o[0m
+[16.977s] [ 57%] [32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/explore_lite_msgs/msg/detail/dds_fastrtps/explore_status__type_support.cpp.o[0m
+[17.045s] [ 60%] [32mBuilding CXX object CMakeFiles/explore_lite_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/explore_lite_msgs/msg/detail/explore_status__type_support_c.cpp.o[0m
+[17.068s] [ 62%] [32m[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_c.so[0m
+[17.153s] [ 62%] Built target explore_lite_msgs__rosidl_typesupport_introspection_c
+[17.416s] [ 62%] Built target explore_lite_msgs__rosidl_typesupport_c
+[18.497s] [ 65%] [32m[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_cpp.so[0m
+[18.624s] [ 68%] [32m[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[18.714s] [ 68%] Built target explore_lite_msgs__rosidl_typesupport_cpp
+[18.895s] [ 68%] Built target explore_lite_msgs__rosidl_typesupport_introspection_cpp
+[19.412s] [ 71%] [32m[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[19.432s] [ 74%] [32m[1mLinking CXX shared library libexplore_lite_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[19.649s] [ 74%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_cpp
+[19.659s] [ 74%] Built target explore_lite_msgs__rosidl_typesupport_fastrtps_c
+[19.727s] [ 74%] Built target explore_lite_msgs
+[19.785s] [ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+[20.771s] [ 77%] Built target explore_lite_msgs__py
+[20.855s] [ 80%] [32mBuilding C object CMakeFiles/explore_lite_msgs__rosidl_generator_py.dir/rosidl_generator_py/explore_lite_msgs/msg/_explore_status_s.c.o[0m
+[21.240s] [ 82%] [32m[1mLinking C shared library libexplore_lite_msgs__rosidl_generator_py.so[0m
+[21.351s] [ 82%] Built target explore_lite_msgs__rosidl_generator_py
+[21.424s] [ 85%] [32mBuilding C object CMakeFiles/explore_lite_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[21.425s] [ 88%] [32mBuilding C object CMakeFiles/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[21.430s] [ 91%] [32mBuilding C object CMakeFiles/explore_lite_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[21.763s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[21.800s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.so[0m
+[21.864s] [100%] [32m[1mLinking C shared module rosidl_generator_py/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[21.871s] [100%] Built target explore_lite_msgs_s__rosidl_typesupport_introspection_c
+[21.922s] [100%] Built target explore_lite_msgs_s__rosidl_typesupport_c
+[21.967s] [100%] Built target explore_lite_msgs_s__rosidl_typesupport_fastrtps_c
+[21.998s] Invoked command in '/ros_ws/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --build /ros_ws/build/explore_lite_msgs -- -j12 -l12
+[22.002s] Invoking command in '/ros_ws/build/explore_lite_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --install /ros_ws/build/explore_lite_msgs
+[22.031s] -- Install configuration: ""
+[22.033s] -- Installing: /ros_ws/install/explore_lite_msgs/share/ament_index/resource_index/rosidl_interfaces/explore_lite_msgs
+[22.035s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/msg/ExploreStatus.json
+[22.035s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs
+[22.037s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg
+[22.038s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_generator_c__visibility_control.h
+[22.039s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/explore_status.h
+[22.039s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail
+[22.040s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.h
+[22.040s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__functions.c
+[22.041s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.c
+[22.042s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__functions.h
+[22.042s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__struct.h
+[22.043s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__description.c
+[22.044s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/library_path.sh
+[22.044s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/library_path.dsv
+[22.045s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_generator_c.so
+[22.046s] -- Set non-toolchain portion of runtime path of "/ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_generator_c.so" to ""
+[22.047s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs
+[22.048s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg
+[22.049s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail
+[22.049s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_fastrtps_c.h
+[22.050s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[22.050s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_fastrtps_c.so
+[22.051s] -- Set non-toolchain portion of runtime path of "/ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[22.051s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs
+[22.051s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg
+[22.051s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail
+[22.051s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.c
+[22.051s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_introspection_c.h
+[22.052s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[22.052s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_introspection_c.so
+[22.052s] -- Set non-toolchain portion of runtime path of "/ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_introspection_c.so" to ""
+[22.052s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_c.so
+[22.053s] -- Set non-toolchain portion of runtime path of "/ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_c.so" to ""
+[22.053s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs
+[22.053s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg
+[22.053s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[22.053s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/explore_status.hpp
+[22.053s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail
+[22.053s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__struct.hpp
+[22.054s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.hpp
+[22.055s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__traits.hpp
+[22.055s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__builder.hpp
+[22.055s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs
+[22.056s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg
+[22.056s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[22.056s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail
+[22.056s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_fastrtps_cpp.hpp
+[22.057s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/dds_fastrtps
+[22.057s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_fastrtps_cpp.so
+[22.057s] -- Set non-toolchain portion of runtime path of "/ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[22.058s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs
+[22.059s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg
+[22.061s] -- Up-to-date: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail
+[22.061s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__rosidl_typesupport_introspection_cpp.hpp
+[22.061s] -- Installing: /ros_ws/install/explore_lite_msgs/include/explore_lite_msgs/explore_lite_msgs/msg/detail/explore_status__type_support.cpp
+[22.061s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_introspection_cpp.so
+[22.062s] -- Set non-toolchain portion of runtime path of "/ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[22.062s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_cpp.so
+[22.065s] -- Set non-toolchain portion of runtime path of "/ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_typesupport_cpp.so" to ""
+[22.065s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/pythonpath.sh
+[22.065s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/pythonpath.dsv
+[22.066s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs-1.0.0-py3.12.egg-info
+[22.067s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs-1.0.0-py3.12.egg-info/PKG-INFO
+[22.067s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs-1.0.0-py3.12.egg-info/dependency_links.txt
+[22.067s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs-1.0.0-py3.12.egg-info/SOURCES.txt
+[22.067s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs-1.0.0-py3.12.egg-info/top_level.txt
+[22.070s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs
+[22.070s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/__init__.py
+[22.071s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_c.c
+[22.071s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[22.071s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.so
+[22.072s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.so
+[22.072s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/_explore_lite_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[22.072s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/msg
+[22.072s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/msg/__init__.py
+[22.073s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/msg/_explore_status.py
+[22.073s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/msg/_explore_status_s.c
+[22.073s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.so
+[22.196s] Listing '/ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs'...
+[22.196s] Compiling '/ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/__init__.py'...
+[22.196s] Listing '/ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/msg'...
+[22.196s] Compiling '/ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/msg/__init__.py'...
+[22.197s] Compiling '/ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/msg/_explore_status.py'...
+[22.214s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.so
+[22.215s] -- Set non-toolchain portion of runtime path of "/ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[22.216s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.so
+[22.219s] -- Set non-toolchain portion of runtime path of "/ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[22.220s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.so
+[22.220s] -- Set non-toolchain portion of runtime path of "/ros_ws/install/explore_lite_msgs/lib/python3.12/site-packages/explore_lite_msgs/explore_lite_msgs_s__rosidl_typesupport_c.so" to ""
+[22.221s] -- Installing: /ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_generator_py.so
+[22.221s] -- Set non-toolchain portion of runtime path of "/ros_ws/install/explore_lite_msgs/lib/libexplore_lite_msgs__rosidl_generator_py.so" to ""
+[22.223s] -- Installing: /ros_ws/install/explore_lite_msgs/share/ament_index/resource_index/rust_packages/explore_lite_msgs
+[22.223s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/rust
+[22.227s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/rust/build.rs
+[22.227s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/rust/src
+[22.227s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/rust/src/lib.rs
+[22.228s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/rust/src/msg
+[22.228s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/rust/src/msg/rmw.rs
+[22.228s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/rust/src/msg.rs
+[22.229s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/rust/Cargo.toml
+[22.229s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/msg/ExploreStatus.idl
+[22.229s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/msg/ExploreStatus.msg
+[22.232s] -- Installing: /ros_ws/install/explore_lite_msgs/share/ament_index/resource_index/package_run_dependencies/explore_lite_msgs
+[22.233s] -- Installing: /ros_ws/install/explore_lite_msgs/share/ament_index/resource_index/parent_prefix_path/explore_lite_msgs
+[22.234s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/ament_prefix_path.sh
+[22.235s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/ament_prefix_path.dsv
+[22.235s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/path.sh
+[22.236s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/environment/path.dsv
+[22.236s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.bash
+[22.237s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.sh
+[22.237s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.zsh
+[22.237s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/local_setup.dsv
+[22.238s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.dsv
+[22.238s] -- Installing: /ros_ws/install/explore_lite_msgs/share/ament_index/resource_index/packages/explore_lite_msgs
+[22.238s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_cExport.cmake
+[22.238s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_cExport-noconfig.cmake
+[22.238s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[22.239s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[22.239s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cExport.cmake
+[22.239s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[22.239s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cExport.cmake
+[22.240s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[22.240s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_cppExport.cmake
+[22.240s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[22.240s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[22.240s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[22.241s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[22.241s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cppExport.cmake
+[22.241s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[22.242s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_pyExport.cmake
+[22.242s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/export_explore_lite_msgs__rosidl_generator_pyExport-noconfig.cmake
+[22.242s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake-extras.cmake
+[22.247s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[22.248s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[22.248s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[22.248s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[22.248s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[22.249s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[22.250s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[22.250s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgsConfig.cmake
+[22.254s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/cmake/explore_lite_msgsConfig-version.cmake
+[22.255s] -- Installing: /ros_ws/install/explore_lite_msgs/share/explore_lite_msgs/package.xml
+[22.258s] Invoked command in '/ros_ws/build/explore_lite_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --install /ros_ws/build/explore_lite_msgs

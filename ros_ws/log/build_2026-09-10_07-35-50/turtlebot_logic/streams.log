@@ -1,0 +1,31 @@
+[3.815s] Invoking command in '/ros_ws/src/turtlebot_logic': PYTHONPATH=/ros_ws/build/turtlebot_logic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros_ws/install/turtlebot_logic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot_logic build --build-base /ros_ws/build/turtlebot_logic/build install --record /ros_ws/build/turtlebot_logic/install.log --install-scripts $base/lib/turtlebot_logic --single-version-externally-managed install_data
+[4.577s] running egg_info
+[4.617s] writing ../../build/turtlebot_logic/turtlebot_logic.egg-info/PKG-INFO
+[4.618s] writing dependency_links to ../../build/turtlebot_logic/turtlebot_logic.egg-info/dependency_links.txt
+[4.618s] writing entry points to ../../build/turtlebot_logic/turtlebot_logic.egg-info/entry_points.txt
+[4.623s] writing requirements to ../../build/turtlebot_logic/turtlebot_logic.egg-info/requires.txt
+[4.623s] writing top-level names to ../../build/turtlebot_logic/turtlebot_logic.egg-info/top_level.txt
+[4.699s] reading manifest file '../../build/turtlebot_logic/turtlebot_logic.egg-info/SOURCES.txt'
+[4.701s] writing manifest file '../../build/turtlebot_logic/turtlebot_logic.egg-info/SOURCES.txt'
+[4.701s] running build
+[4.702s] running build_py
+[4.703s] copying turtlebot_logic/maze_solver.py -> /ros_ws/build/turtlebot_logic/build/lib/turtlebot_logic
+[4.704s] copying turtlebot_logic/__init__.py -> /ros_ws/build/turtlebot_logic/build/lib/turtlebot_logic
+[4.705s] running install
+[4.721s] running install_lib
+[4.765s] copying /ros_ws/build/turtlebot_logic/build/lib/turtlebot_logic/maze_solver.py -> /ros_ws/install/turtlebot_logic/lib/python3.12/site-packages/turtlebot_logic
+[4.768s] copying /ros_ws/build/turtlebot_logic/build/lib/turtlebot_logic/__init__.py -> /ros_ws/install/turtlebot_logic/lib/python3.12/site-packages/turtlebot_logic
+[4.770s] byte-compiling /ros_ws/install/turtlebot_logic/lib/python3.12/site-packages/turtlebot_logic/maze_solver.py to maze_solver.cpython-312.pyc
+[4.777s] byte-compiling /ros_ws/install/turtlebot_logic/lib/python3.12/site-packages/turtlebot_logic/__init__.py to __init__.cpython-312.pyc
+[4.779s] running install_data
+[4.780s] copying resource/turtlebot_logic -> /ros_ws/install/turtlebot_logic/share/ament_index/resource_index/packages
+[4.783s] copying package.xml -> /ros_ws/install/turtlebot_logic/share/turtlebot_logic
+[4.784s] copying launch/navigation.launch.py -> /ros_ws/install/turtlebot_logic/share/turtlebot_logic/launch
+[4.787s] copying config/nav2_params.yaml -> /ros_ws/install/turtlebot_logic/share/turtlebot_logic/config
+[4.789s] running install_egg_info
+[4.839s] removing '/ros_ws/install/turtlebot_logic/lib/python3.12/site-packages/turtlebot_logic-0.0.0-py3.12.egg-info' (and everything under it)
+[4.854s] Copying ../../build/turtlebot_logic/turtlebot_logic.egg-info to /ros_ws/install/turtlebot_logic/lib/python3.12/site-packages/turtlebot_logic-0.0.0-py3.12.egg-info
+[4.854s] running install_scripts
+[5.619s] Installing maze_solver script to /ros_ws/install/turtlebot_logic/lib/turtlebot_logic
+[5.619s] writing list of installed files to '/ros_ws/build/turtlebot_logic/install.log'
+[5.824s] Invoked command in '/ros_ws/src/turtlebot_logic' returned '0': PYTHONPATH=/ros_ws/build/turtlebot_logic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros_ws/install/turtlebot_logic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot_logic build --build-base /ros_ws/build/turtlebot_logic/build install --record /ros_ws/build/turtlebot_logic/install.log --install-scripts $base/lib/turtlebot_logic --single-version-externally-managed install_data

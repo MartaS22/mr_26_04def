@@ -5,6 +5,7 @@
 /ros_ws/install/turtlebot_logic/share/ament_index/resource_index/packages/turtlebot_logic
 /ros_ws/install/turtlebot_logic/share/turtlebot_logic/package.xml
 /ros_ws/install/turtlebot_logic/share/turtlebot_logic/launch/navigation.launch.py
+/ros_ws/install/turtlebot_logic/share/turtlebot_logic/launch/explore.launch.py
 /ros_ws/install/turtlebot_logic/share/turtlebot_logic/config/nav2_params.yaml
 /ros_ws/install/turtlebot_logic/lib/python3.12/site-packages/turtlebot_logic-0.0.0-py3.12.egg-info/zip-safe
 /ros_ws/install/turtlebot_logic/lib/python3.12/site-packages/turtlebot_logic-0.0.0-py3.12.egg-info/PKG-INFO

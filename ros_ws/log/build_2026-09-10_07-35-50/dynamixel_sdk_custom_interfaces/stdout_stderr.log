@@ -1,0 +1,263 @@
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found builtin_interfaces: 2.0.4 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (3.5s)
+-- Generating done (0.2s)
+-- Build files have been written to: /ros_ws/build/dynamixel_sdk_custom_interfaces
+[  2%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_type_description
+[  4%] Built target dynamixel_sdk_custom_interfaces__rs
+[  4%] Built target ament_cmake_python_copy_dynamixel_sdk_custom_interfaces
+[  6%] Built target dynamixel_sdk_custom_interfaces__cpp
+[  8%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__description.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__description.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.c.o[0m
+[ 22%] [32m[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so[0m
+[ 24%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_c
+running egg_info
+[ 26%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c.o[0m
+[ 28%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support_c.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support_c.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/msg/detail/dds_fastrtps/set_position__type_support.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_custom_interfaces/srv/get_position__type_support.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps/get_position__type_support.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_custom_interfaces/msg/set_position__type_support.cpp.o[0m
+writing dynamixel_sdk_custom_interfaces.egg-info/PKG-INFO
+[ 48%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.cpp.o[0m
+writing dependency_links to dynamixel_sdk_custom_interfaces.egg-info/dependency_links.txt
+writing top-level names to dynamixel_sdk_custom_interfaces.egg-info/top_level.txt
+reading manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'dynamixel_sdk_custom_interfaces.egg-info/SOURCES.txt'
+[ 51%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.cpp.o[0m
+[ 51%] Built target ament_cmake_python_build_dynamixel_sdk_custom_interfaces_egg
+[ 53%] [32m[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 55%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so[0m
+[ 57%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_c
+[ 60%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c
+[ 62%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so[0m
+[ 64%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 66%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp
+[ 68%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp
+[ 71%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 73%] [32m[1mLinking CXX shared library libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 75%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c
+[ 77%] Built target dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 77%] Built target dynamixel_sdk_custom_interfaces
+[ 80%] Built target dynamixel_sdk_custom_interfaces__py
+[ 82%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/srv/_get_position_s.c.o[0m
+[ 84%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/msg/_set_position_s.c.o[0m
+[ 86%] [32m[1mLinking C shared library libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so[0m
+[ 86%] Built target dynamixel_sdk_custom_interfaces__rosidl_generator_py
+[ 88%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 95%] [32m[1mLinking C shared module rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[ 95%] Built target dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c
+[ 97%] [32m[1mLinking C shared module rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so[0m
+[ 97%] Built target dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c
+[100%] [32m[1mLinking C shared module rosidl_generator_py/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[100%] Built target dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c
+-- Install configuration: ""
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/dynamixel_sdk_custom_interfaces
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.json
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.json
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/get_position.h
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.h
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.h
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.h
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__functions.c
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__description.c
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_position.h
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__description.c
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.h
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.h
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.h
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__functions.c
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/library_path.sh
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/library_path.dsv
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_c.so" to ""
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_fastrtps_c.h
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/get_position.hpp
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__traits.hpp
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__struct.hpp
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.hpp
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__builder.hpp
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/set_position.hpp
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__struct.hpp
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.hpp
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__builder.hpp
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__traits.hpp
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/dds_fastrtps
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/dds_fastrtps
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.c
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.c
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__type_support.cpp
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/srv/detail/get_position__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__type_support.cpp
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/include/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces/msg/detail/set_position__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_typesupport_cpp.so" to ""
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/pythonpath.sh
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/pythonpath.dsv
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-4.0.5-py3.12.egg-info
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-4.0.5-py3.12.egg-info/PKG-INFO
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-4.0.5-py3.12.egg-info/dependency_links.txt
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-4.0.5-py3.12.egg-info/SOURCES.txt
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-4.0.5-py3.12.egg-info/top_level.txt
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/__init__.py
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position.py
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/__init__.py
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position_s.c
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position.py
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/__init__.py
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position_s.c
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/_dynamixel_sdk_custom_interfaces_s.ep.rosidl_typesupport_c.c
+Listing '/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces'...
+Compiling '/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/__init__.py'...
+Listing '/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg'...
+Compiling '/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/__init__.py'...
+Compiling '/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/msg/_set_position.py'...
+Listing '/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv'...
+Compiling '/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/__init__.py'...
+Compiling '/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/srv/_get_position.py'...
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces_s__rosidl_typesupport_c.so" to ""
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/ros_ws/install/dynamixel_sdk_custom_interfaces/lib/libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so" to ""
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/rust_packages/dynamixel_sdk_custom_interfaces
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/rust
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/rust/build.rs
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/rust/src
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/rust/src/srv
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/rust/src/srv/rmw.rs
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/rust/src/lib.rs
+-- Up-to-date: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/rust/src/msg
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/rust/src/msg/rmw.rs
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/rust/src/srv.rs
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/rust/src/msg.rs
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/rust/Cargo.toml
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.idl
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.idl
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/msg/SetPosition.msg
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/srv/GetPosition.srv
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_custom_interfaces
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_custom_interfaces
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/ament_prefix_path.sh
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/ament_prefix_path.dsv
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/path.sh
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/environment/path.dsv
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.bash
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.sh
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.zsh
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/local_setup.dsv
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/ament_index/resource_index/packages/dynamixel_sdk_custom_interfaces
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_cppExport.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_pyExport.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/export_dynamixel_sdk_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfacesConfig.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake/dynamixel_sdk_custom_interfacesConfig-version.cmake
+-- Installing: /ros_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.xml

@@ -1,0 +1,197 @@
+[0.171s] Invoking command in '/ros_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --build /ros_ws/build/dynamixel_sdk -- -j12 -l12
+[1.454s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.965s] -- Configuring done (1.6s)
+[2.017s] -- Generating done (0.1s)
+[2.029s] -- Build files have been written to: /ros_ws/build/dynamixel_sdk
+[2.187s] [  0%] Built target ament_cmake_python_copy_dynamixel_easy_sdk
+[2.189s] [100%] Built target dynamixel_sdk
+[2.193s] [100%] Built target ament_cmake_python_copy_dynamixel_sdk
+[2.954s] running egg_info
+[2.986s] running egg_info
+[3.025s] writing dynamixel_easy_sdk.egg-info/PKG-INFO
+[3.027s] writing dependency_links to dynamixel_easy_sdk.egg-info/dependency_links.txt
+[3.027s] writing top-level names to dynamixel_easy_sdk.egg-info/top_level.txt
+[3.043s] writing dynamixel_sdk.egg-info/PKG-INFO
+[3.044s] writing dependency_links to dynamixel_sdk.egg-info/dependency_links.txt
+[3.045s] writing top-level names to dynamixel_sdk.egg-info/top_level.txt
+[3.164s] reading manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[3.166s] writing manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[3.170s] reading manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[3.172s] writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[3.246s] [100%] Built target ament_cmake_python_build_dynamixel_sdk_egg
+[3.247s] [100%] Built target ament_cmake_python_build_dynamixel_easy_sdk_egg
+[3.281s] Invoked command in '/ros_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --build /ros_ws/build/dynamixel_sdk -- -j12 -l12
+[3.284s] Invoking command in '/ros_ws/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --install /ros_ws/build/dynamixel_sdk
+[3.307s] -- Install configuration: ""
+[3.307s] -- Up-to-date: /ros_ws/install/dynamixel_sdk/include/
+[3.308s] -- Up-to-date: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk
+[3.309s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h
+[3.311s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_sync_read.h
+[3.311s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h
+[3.312s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_bulk_read.h
+[3.313s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h
+[3.314s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_handler.h
+[3.315s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h
+[3.315s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h
+[3.316s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h
+[3.317s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h
+[3.318s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h
+[3.319s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h
+[3.320s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h
+[3.322s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h
+[3.323s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h
+[3.324s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h
+[3.325s] -- Up-to-date: /ros_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk
+[3.326s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/group_executor.hpp
+[3.327s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/control_table.hpp
+[3.328s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/dynamixel_easy_sdk.hpp
+[3.333s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/dynamixel_error.hpp
+[3.333s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/data_types.hpp
+[3.333s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/motor.hpp
+[3.334s] -- Installing: /ros_ws/install/dynamixel_sdk/include//dynamixel_easy_sdk/connector.hpp
+[3.335s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+[3.343s] -- Up-to-date: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table
+[3.344s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_v350.model
+[3.346s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_m001.model
+[3.346s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_a099.model
+[3.347s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/2xl430_w250.model
+[3.348s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_a099.model
+[3.349s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m288_fw52.model
+[3.349s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_w270.model
+[3.350s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm54_060_s250.model
+[3.351s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_r051.model
+[3.352s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h54_100_s500_ra.model
+[3.353s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_w350.model
+[3.354s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_64.model
+[3.356s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm430_w210.model
+[3.357s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc430_w240.model
+[3.358s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd540_t150.model
+[3.358s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_a051.model
+[3.359s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t181.model
+[3.360s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc430_w150.model
+[3.361s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/rh_p12_rn.model
+[3.362s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_r099.model
+[3.363s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_v210.model
+[3.365s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm540_w270.model
+[3.365s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl430_w250.model
+[3.366s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph54_200_s500.model
+[3.367s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm42_010_s260.model
+[3.367s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m42_10_s260_ra.model
+[3.368s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph42_020_s300.model
+[3.369s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_t260.model
+[3.370s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_t140.model
+[3.371s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_h260.model
+[3.372s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h54_200_s500_ra.model
+[3.373s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m181_fw52.model
+[3.374s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_w210.model
+[3.375s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_b001.model
+[3.375s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_r051.model
+[3.376s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw430_t200.model
+[3.377s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m181.model
+[3.378s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t288.model
+[3.379s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw430_t333.model
+[3.380s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl320.model
+[3.380s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph54_100_s500.model
+[3.381s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h42_20_s300_ra.model
+[3.382s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m288.model
+[3.383s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t288_fw52.model
+[3.384s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_r099.model
+[3.385s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_v150.model
+[3.386s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd430_t210.model
+[3.386s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd540_t270.model
+[3.388s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m54_60_s250_ra.model
+[3.389s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/dynamixel.model
+[3.390s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd430_t350.model
+[3.391s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_v270.model
+[3.391s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/2xc430_w250.model
+[3.392s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m288_fw52.model
+[3.393s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_106.model
+[3.394s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm54_040_s250.model
+[3.395s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m077.model
+[3.396s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_m001.model
+[3.397s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m288.model
+[3.397s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m54_40_s250_ra.model
+[3.398s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm540_w150.model
+[3.399s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t181_fw52.model
+[3.400s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm430_w350.model
+[3.401s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_a051.model
+[3.402s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m077_fw52.model
+[3.403s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_w150.model
+[3.405s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_b001.model
+[3.405s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_28.model
+[3.406s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.sh
+[3.408s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.dsv
+[3.408s] -- Up-to-date: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info
+[3.409s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info/PKG-INFO
+[3.410s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info/dependency_links.txt
+[3.410s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info/SOURCES.txt
+[3.411s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info/top_level.txt
+[3.411s] -- Up-to-date: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk
+[3.411s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.cpp
+[3.411s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.py
+[3.412s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.py
+[3.412s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/__init__.py
+[3.413s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.py
+[3.413s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_linux.cpp
+[3.413s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.cpp
+[3.414s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/robotis_def.py
+[3.414s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_arduino.cpp
+[3.414s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_mac.cpp
+[3.415s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.py
+[3.415s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.cpp
+[3.415s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_handler.cpp
+[3.416s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.py
+[3.416s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.py
+[3.416s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.cpp
+[3.417s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_fast_bulk_read.cpp
+[3.417s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.cpp
+[3.417s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.py
+[3.418s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.cpp
+[3.419s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.cpp
+[3.419s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_fast_sync_read.cpp
+[3.422s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.cpp
+[3.422s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_windows.cpp
+[3.422s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.py
+[3.530s] Listing '/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk'...
+[3.546s] -- Up-to-date: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info
+[3.546s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info/PKG-INFO
+[3.547s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info/dependency_links.txt
+[3.548s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info/SOURCES.txt
+[3.549s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info/top_level.txt
+[3.550s] -- Up-to-date: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk
+[3.550s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.cpp
+[3.551s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.cpp
+[3.552s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.py
+[3.552s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/data_types.py
+[3.553s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.cpp
+[3.554s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/__init__.py
+[3.554s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.py
+[3.554s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.cpp
+[3.554s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.py
+[3.555s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.py
+[3.555s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.py
+[3.555s] -- Installing: /ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.cpp
+[3.666s] Listing '/ros_ws/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk'...
+[3.679s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh
+[3.680s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv
+[3.680s] -- Installing: /ros_ws/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk
+[3.682s] -- Installing: /ros_ws/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk
+[3.683s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh
+[3.684s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv
+[3.685s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh
+[3.685s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv
+[3.686s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash
+[3.686s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh
+[3.687s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh
+[3.687s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv
+[3.687s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv
+[3.688s] -- Installing: /ros_ws/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk
+[3.689s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake
+[3.689s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport-noconfig.cmake
+[3.690s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_targets-extras.cmake
+[3.690s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.691s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[3.691s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake
+[3.692s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake
+[3.693s] -- Installing: /ros_ws/install/dynamixel_sdk/share/dynamixel_sdk/package.xml
+[3.697s] Invoked command in '/ros_ws/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --install /ros_ws/build/dynamixel_sdk
