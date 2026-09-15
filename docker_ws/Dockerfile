@@ -40,7 +40,7 @@ RUN apt-get update -y && apt-get install -y \
     ros-jazzy-tf-transformations \
     && rm -rf /var/lib/apt/lists/*
  
-# 5. Visione Artificiale e Riconoscimento (per i Token/Chiavi)
+# 5. Visione artificiale e riconoscimento (per i token)
 RUN apt-get update -y && apt-get install -y \
     ros-jazzy-cv-bridge \
     ros-jazzy-image-transport \
@@ -55,7 +55,7 @@ RUN apt-get update -y && apt-get install -y \
 # 6. Inizializzazione di rosdep
 RUN rosdep init || true && rosdep update
  
-# 7. Configurazione Workspace ROS 2
+# 7. Configurazione workspace ROS 2
 RUN mkdir -p /ros_ws/src
 WORKDIR /ros_ws
  
@@ -66,9 +66,5 @@ RUN echo "export TURTLEBOT3_MODEL=waffle" >> /root/.bashrc
 RUN echo "export ROS_DOMAIN_ID=0" >> /root/.bashrc
 RUN echo "export GZ_SIM_RESOURCE_PATH=/ros_ws/src:\$GZ_SIM_RESOURCE_PATH" >> /root/.bashrc
  
-# 9. Entrypoint
-#COPY entrypoint.sh /entrypoint.sh
-#RUN chmod +x /entrypoint.sh
- 
-#ENTRYPOINT ["/entrypoint.sh"]
+
 CMD ["bash"]

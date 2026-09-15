@@ -13,7 +13,6 @@ def generate_launch_description():
     # Percorsi dei file
     world_path = os.path.join(pkg_turtlebot_maze, 'worlds', 'maze.sdf')
     
-    # MODIFICA CHIAVE: Percorso al file SDF nativo del Waffle per Gazebo Harmonic
     tb3_model_path = os.path.join(pkg_tb3_gazebo, 'models', 'turtlebot3_waffle', 'model.sdf')
  
     set_tb3_model = SetEnvironmentVariable('TURTLEBOT3_MODEL', 'waffle')
@@ -32,7 +31,6 @@ def generate_launch_description():
         launch_arguments={'use_sim_time': 'true'}.items()
     )
  
-    # MODIFICA CHIAVE: Usiamo -file al posto di -topic per caricare i plugin dei sensori
     spawn_robot = Node(
         package='ros_gz_sim',
         executable='create',

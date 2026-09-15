@@ -396,7 +396,7 @@
        <!-- Chiave 1 (ArUco ID 1) - Marker solo su 2 facce -->
     <model name="key_1">
       <static>true</static>
-      <pose>0.8 2.0 0.15 0 0 0</pose>
+      <pose>-2.0 -4.0 0.15 0 0 1.57</pose>
       <link name="link">
         
         <!-- Collisione fisica del cubo per Nav2 -->
@@ -456,7 +456,7 @@
        <!-- Chiave 2 (ArUco ID 2) - Marker solo su 2 facce -->
     <model name="key_2">
       <static>true</static>
-      <pose>7.0 7.0 0.15 0 0 0.78</pose>
+      <pose>0.8 2.0 0.15 0 0 0</pose>
       <link name="link">
         
         <!-- Collisione fisica del cubo per Nav2 -->
@@ -516,7 +516,7 @@
        <!-- Chiave 3 (ArUco ID 3) - Marker solo su 2 facce -->
     <model name="key_3">
       <static>true</static>
-      <pose>6.0 6.0 0.15 0 0 0</pose>
+      <pose>-2.0 0 0.15 0 0 0</pose>
       <link name="link">
         
         <!-- Collisione fisica del cubo per Nav2 -->
@@ -696,7 +696,7 @@
        <!-- Chiave 6 (ArUco ID 2) - Marker solo su 2 facce -->
     <model name="key_6">
       <static>true</static>
-      <pose>-2.0 0 0.15 0 0 0</pose>
+      <pose>6.0 6.0 0.15 0 0 0</pose>
       <link name="link">
         
         <!-- Collisione fisica del cubo per Nav2 -->
@@ -876,7 +876,7 @@
        <!-- Chiave 9 (ArUco ID 2) - Marker solo su 2 facce -->
     <model name="key_9">
       <static>true</static>
-      <pose>-2.0 -4.0 0.15 0 0 1.57</pose>
+      <pose>7.0 7.0 0.15 0 0 0.78</pose>
       <link name="link">
         
         <!-- Collisione fisica del cubo per Nav2 -->

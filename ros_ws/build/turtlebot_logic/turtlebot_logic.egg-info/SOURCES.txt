@@ -10,6 +10,7 @@ setup.py
 ../../build/turtlebot_logic/turtlebot_logic.egg-info/zip-safe
 config/nav2_params.yaml
 launch/explore.launch.py
+launch/main.launch.py
 launch/navigation.launch.py
 resource/turtlebot_logic
 test/test_copyright.py
