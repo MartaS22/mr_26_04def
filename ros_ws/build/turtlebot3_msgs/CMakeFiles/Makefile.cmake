@@ -639,7 +639,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ament_cmake_environment_hooks/library_path.dsv"
   "ament_cmake_environment_hooks/pythonpath.dsv"
   "ament_cmake_python/turtlebot3_msgs/setup.py"
-  "ament_cmake_index/share/ament_index/resource_index/rust_packages/turtlebot3_msgs"
   "ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_msgs"
   "ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_msgs"
   "ament_cmake_environment_hooks/ament_prefix_path.dsv"

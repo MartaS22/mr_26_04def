@@ -140,7 +140,7 @@ libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/j
 libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/librmw.so
 libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so
 libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
-libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/libfastcdr.so.2.2.7
+libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/libfastcdr.so.2.2.8
 libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so
 libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libdynamixel_sdk_custom_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so

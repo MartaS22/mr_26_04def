@@ -14,6 +14,7 @@ from tf2_geometry_msgs import do_transform_point
 from geometry_msgs.msg import PointStamped
 from rclpy.action import ActionClient
 from nav2_msgs.action import NavigateToPose
+from std_msgs.msg import String
 
 class RobotState(Enum):
 
@@ -37,6 +38,7 @@ class MazeSolverNode(Node):
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
         self.aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
+        self.log_pub = self.create_publisher(String, '/maze_keys_log', 10)
 
         try:
 
@@ -107,6 +109,12 @@ class MazeSolverNode(Node):
             return
 
         self.get_logger().info(f" CHIAVE {self.chiave_target} RACCOLTA!")
+
+        # 0. Data logging
+        log_msg = String()
+        log_msg.data = f"Chiave {self.chiave_target} raccolta!"
+        self.log_pub.publish(log_msg)
+
 
         # 1. Fermiamo Nav2
 

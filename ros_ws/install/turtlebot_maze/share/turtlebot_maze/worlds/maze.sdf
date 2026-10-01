@@ -413,11 +413,10 @@
           </material>
         </visual>
  
-        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <!-- 2. FACCIA FRONTALE (con Marker) -->
         <visual name="marker_frontale1">
-          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
           <pose>0.026 0 0 0 0 0</pose>
-          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <!-- Spessore di 1 millimetro, larga e alta 30 cm -->
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
             <ambient>1.0 1.0 1.0 1.0</ambient>
@@ -432,9 +431,8 @@
           </material>
         </visual>
  
-        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <!-- 3. FACCIA POSTERIORE (Con Marker ) -->
         <visual name="marker_posteriore1">
-          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
           <pose>-0.026 0 0 0 0 0</pose>
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
@@ -456,7 +454,7 @@
        <!-- Chiave 2 (ArUco ID 2) - Marker solo su 2 facce -->
     <model name="key_2">
       <static>true</static>
-      <pose>0.8 2.0 0.15 0 0 0</pose>
+      <pose>0.8 1.0 0.15 0 0 0</pose>
       <link name="link">
         
         <!-- Collisione fisica del cubo per Nav2 -->
@@ -464,7 +462,7 @@
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
         </collision>
  
-        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <!-- 1. IL CUBO BASE (completamente Nero) -->
         <visual name="cubo_base">
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
           <material>
@@ -473,11 +471,10 @@
           </material>
         </visual>
  
-        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <!-- 2. FACCIA FRONTALE (Con Marker) -->
         <visual name="marker_frontale2">
-          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
           <pose>0.026 0 0 0 0 0</pose>
-          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <!-- Spessore di 1 millimetro, larga e alta 30 cm -->
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
             <ambient>1.0 1.0 1.0 1.0</ambient>
@@ -492,9 +489,8 @@
           </material>
         </visual>
  
-        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <!-- 3. FACCIA POSTERIORE (Con Marker) -->
         <visual name="marker_posteriore2">
-          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
           <pose>-0.026 0 0 0 0 0</pose>
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
@@ -524,7 +520,7 @@
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
         </collision>
  
-        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <!-- 1. IL CUBO BASE (completamente Nero) -->
         <visual name="cubo_base">
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
           <material>
@@ -533,11 +529,10 @@
           </material>
         </visual>
  
-        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <!-- 2. FACCIA FRONTALE (Con Marker) -->
         <visual name="marker_frontale3">
-          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
           <pose>0.026 0 0 0 0 0</pose>
-          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <!-- Spessore di 1 millimetro, larga e alta 30 cm -->
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
             <ambient>1.0 1.0 1.0 1.0</ambient>
@@ -552,9 +547,8 @@
           </material>
         </visual>
  
-        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <!-- 3. FACCIA POSTERIORE (Con Marker ) -->
         <visual name="marker_posteriore3">
-          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
           <pose>-0.026 0 0 0 0 0</pose>
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
@@ -584,7 +578,7 @@
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
         </collision>
  
-        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <!-- 1. IL CUBO BASE (completamente Nero) -->
         <visual name="cubo_base">
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
           <material>
@@ -593,11 +587,10 @@
           </material>
         </visual>
  
-        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <!-- 2. FACCIA FRONTALE (Con Marker ) -->
         <visual name="marker_frontale4">
-          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
           <pose>0.026 0 0 0 0 0</pose>
-          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <!-- Spessore di 1 millimetro, larga e alta 30 cm -->
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
             <ambient>1.0 1.0 1.0 1.0</ambient>
@@ -612,9 +605,8 @@
           </material>
         </visual>
  
-        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <!-- 3. FACCIA POSTERIORE (Con Marker) -->
         <visual name="marker_posteriore4">
-          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
           <pose>-0.026 0 0 0 0 0</pose>
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
@@ -644,7 +636,7 @@
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
         </collision>
  
-        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <!-- 1. IL CUBO BASE (completamente Nero) -->
         <visual name="cubo_base">
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
           <material>
@@ -653,11 +645,10 @@
           </material>
         </visual>
  
-        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <!-- 2. FACCIA FRONTALE (Con Marker) -->
         <visual name="marker_frontale5">
-          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
           <pose>0.026 0 0 0 0 0</pose>
-          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <!-- Spessore di 1 millimetro, larga e alta 30 cm -->
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
             <ambient>1.0 1.0 1.0 1.0</ambient>
@@ -672,9 +663,8 @@
           </material>
         </visual>
  
-        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <!-- 3. FACCIA POSTERIORE (Con Marker) -->
         <visual name="marker_posteriore5">
-          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
           <pose>-0.026 0 0 0 0 0</pose>
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
@@ -704,7 +694,7 @@
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
         </collision>
  
-        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <!-- 1. IL CUBO BASE (completamente Nero) -->
         <visual name="cubo_base">
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
           <material>
@@ -713,11 +703,10 @@
           </material>
         </visual>
  
-        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <!-- 2. FACCIA FRONTALE (Con Marker) -->
         <visual name="marker_frontale6">
-          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
           <pose>0.026 0 0 0 0 0</pose>
-          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <!-- Spessore di 1 millimetro, larga e alta 30 cm -->
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
             <ambient>1.0 1.0 1.0 1.0</ambient>
@@ -732,9 +721,8 @@
           </material>
         </visual>
  
-        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <!-- 3. FACCIA POSTERIORE (Con Marker) -->
         <visual name="marker_posteriore6">
-          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
           <pose>-0.026 0 0 0 0 0</pose>
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
@@ -764,7 +752,7 @@
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
         </collision>
  
-        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <!-- 1. IL CUBO BASE (completamente Nero) -->
         <visual name="cubo_base">
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
           <material>
@@ -773,11 +761,10 @@
           </material>
         </visual>
  
-        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <!-- 2. FACCIA FRONTALE (Con Marker) -->
         <visual name="marker_frontale7">
-          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
           <pose>0.026 0 0 0 0 0</pose>
-          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <!-- Spessore di 1 millimetro, larga e alta 30 cm -->
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
             <ambient>1.0 1.0 1.0 1.0</ambient>
@@ -792,9 +779,8 @@
           </material>
         </visual>
  
-        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <!-- 3. FACCIA POSTERIORE (Con Marker ) -->
         <visual name="marker_posteriore7">
-          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
           <pose>-0.026 0 0 0 0 0</pose>
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
@@ -824,7 +810,7 @@
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
         </collision>
  
-        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <!-- 1. IL CUBO BASE (completamente Nero) -->
         <visual name="cubo_base">
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
           <material>
@@ -833,11 +819,10 @@
           </material>
         </visual>
  
-        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <!-- 2. FACCIA FRONTALE (Con Marker) -->
         <visual name="marker_frontale8">
-          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
           <pose>0.026 0 0 0 0 0</pose>
-          <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
+          <!-- Spessore di 1 millimetro, larga e alta 30 cm -->
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
             <ambient>1.0 1.0 1.0 1.0</ambient>
@@ -852,9 +837,8 @@
           </material>
         </visual>
  
-        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <!-- 3. FACCIA POSTERIORE (Con Marker) -->
         <visual name="marker_posteriore8">
-          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
           <pose>-0.026 0 0 0 0 0</pose>
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>
@@ -884,7 +868,7 @@
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
         </collision>
  
-        <!-- 1. IL CUBO BASE (Completamente Nero) -->
+        <!-- 1. IL CUBO BASE (completamente Nero) -->
         <visual name="cubo_base">
           <geometry><box><size>0.05 0.3 0.3</size></box></geometry>
           <material>
@@ -893,9 +877,8 @@
           </material>
         </visual>
  
-        <!-- 2. FACCIA FRONTALE (Con Marker Emissivo) -->
+        <!-- 2. FACCIA FRONTALE (Con Marker) -->
         <visual name="marker_frontale9">
-          <!-- Posizionata esattamente a filo del lato anteriore (0.151m dal centro) -->
           <pose>0.026 0 0 0 0 0</pose>
           <!-- Spessore invisibile di 1 millimetro, larga e alta 30 cm -->
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
@@ -912,9 +895,8 @@
           </material>
         </visual>
  
-        <!-- 3. FACCIA POSTERIORE (Con Marker Emissivo) -->
+        <!-- 3. FACCIA POSTERIORE (Con Marker ) -->
         <visual name="marker_posteriore9">
-          <!-- Posizionata esattamente a filo del lato posteriore (-0.151m dal centro) -->
           <pose>-0.026 0 0 0 0 0</pose>
           <geometry><box><size>0.001 0.3 0.3</size></box></geometry>
           <material>

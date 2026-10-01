@@ -330,7 +330,7 @@ libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/librosi
 libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/librmw.so
 libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so
 libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
-libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/libfastcdr.so.2.2.7
+libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/libfastcdr.so.2.2.8
 libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
 libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
 libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so

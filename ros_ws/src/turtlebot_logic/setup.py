@@ -28,7 +28,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'maze_solver = turtlebot_logic.maze_solver:main'
-        ],
+            'maze_solver = turtlebot_logic.maze_solver:main',
+            'data_logger = turtlebot_logic.data_logger:main'
+        ]
     },
 )

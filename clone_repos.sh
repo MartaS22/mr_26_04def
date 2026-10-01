@@ -2,3 +2,4 @@ cd ros_ws/src && git clone -b jazzy https://github.com/ROBOTIS-GIT/DynamixelSDK.
 git clone -b jazzy https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 git clone -b jazzy https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 git clone -b jazzy https://github.com/ROBOTIS-GIT/turtlebot3.git
+git clone -b jazzy https://github.com/ros-planning/m-explore-ros2.git

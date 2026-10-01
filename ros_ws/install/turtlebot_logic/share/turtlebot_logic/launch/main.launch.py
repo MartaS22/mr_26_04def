@@ -6,7 +6,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
  
 def generate_launch_description():
-    # Percorsi dei pacchetti
+
     pkg_maze = get_package_share_directory('turtlebot_maze')
     pkg_logic = get_package_share_directory('turtlebot_logic')
  
@@ -15,7 +15,7 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(os.path.join(pkg_maze, 'launch', 'maze_sim.launch.py'))
     )
  
-    # 2. Avvio SLAM e Nav2 (Ritardo di 5 secondi per far caricare Gazebo)
+    # 2. Avvio SLAM e Nav2 (ritardo di 5 secondi per far caricare Gazebo)
     start_nav = TimerAction(
         period=5.0,
         actions=[
@@ -25,7 +25,7 @@ def generate_launch_description():
         ]
     )
  
-    # 3. Avvio Explore Lite (Ritardo di 12 secondi per far inizializzare lo SLAM)
+    # 3. Avvio Explore Lite (ritardo di 12 secondi per far inizializzare lo SLAM)
     start_explore = TimerAction(
         period=12.0,
         actions=[
@@ -34,10 +34,19 @@ def generate_launch_description():
             )
         ]
     )
+
+    # 4. Avvio data_logger per registrare i dati
+    start_logger = Node(
+        package='turtlebot_logic',
+        executable='data_logger',
+        name='data_logger_node',
+        output='screen',
+    )
  
     return LaunchDescription([
         start_gazebo,
         start_nav,
-        start_explore
+        start_explore,
+        start_logger,
     ])
  

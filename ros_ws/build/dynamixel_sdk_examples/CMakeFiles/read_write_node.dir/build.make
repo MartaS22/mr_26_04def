@@ -147,7 +147,7 @@ read_write_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fa
 read_write_node: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
 read_write_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 read_write_node: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_cpp.so
-read_write_node: /opt/ros/jazzy/lib/libfastcdr.so.2.2.7
+read_write_node: /opt/ros/jazzy/lib/libfastcdr.so.2.2.8
 read_write_node: /opt/ros/jazzy/lib/librmw.so
 read_write_node: /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so
 read_write_node: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so

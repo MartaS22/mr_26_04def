@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='dynamixel_easy_sdk',
-    version='4.0.5',
+    version='4.1.0',
     packages=find_packages(
         include=('dynamixel_easy_sdk', 'dynamixel_easy_sdk.*')),
 )

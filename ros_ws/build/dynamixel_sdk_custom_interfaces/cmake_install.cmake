@@ -256,7 +256,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-4.0.5-py3.12.egg-info" TYPE DIRECTORY FILES "/ros_ws/build/dynamixel_sdk_custom_interfaces/ament_cmake_python/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces.egg-info/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_sdk_custom_interfaces-4.1.0-py3.12.egg-info" TYPE DIRECTORY FILES "/ros_ws/build/dynamixel_sdk_custom_interfaces/ament_cmake_python/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces.egg-info/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -364,10 +364,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/rust_packages" TYPE FILE FILES "/ros_ws/build/dynamixel_sdk_custom_interfaces/ament_cmake_index/share/ament_index/resource_index/rust_packages/dynamixel_sdk_custom_interfaces")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

@@ -14,6 +14,7 @@ from tf2_geometry_msgs import do_transform_point
 from geometry_msgs.msg import PointStamped
 from rclpy.action import ActionClient
 from nav2_msgs.action import NavigateToPose
+from std_msgs.msg import String
 
 class RobotState(Enum):
 
@@ -37,6 +38,7 @@ class MazeSolverNode(Node):
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
         self.aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
+        self.log_pub = self.create_publisher(String, '/maze_keys_log', 10)
 
         try:
 
@@ -87,11 +89,9 @@ class MazeSolverNode(Node):
             self.get_logger().info(f" MI RICORDO DOVE SI TROVA LA CHIAVE {self.chiave_target}! Vado dritto all'obiettivo.")
 
             # Recupero le coordinate salvate
-
             map_x, map_y = self.mappa_chiavi[self.chiave_target]
 
             # Imposto lo stato e mi dirigo verso le coordinate
-
             self.set_explore_state(False)
             self.stato_corrente = RobotState.APPROACHING_KEY
             self.go_to_key(map_x, map_y)
@@ -109,6 +109,12 @@ class MazeSolverNode(Node):
             return
 
         self.get_logger().info(f" CHIAVE {self.chiave_target} RACCOLTA!")
+
+        # 0. Data logging
+        log_msg = String()
+        log_msg.data = f"Chiave {self.chiave_target} raccolta!"
+        self.log_pub.publish(log_msg)
+
 
         # 1. Fermiamo Nav2
 
@@ -217,53 +223,38 @@ class MazeSolverNode(Node):
                             try:
 
                                 trans = self.tf_buffer.lookup_transform('map', 'camera_rgb_optical_frame', rclpy.time.Time(), rclpy.duration.Duration(seconds=0.5))
-
                                 punto_camera = PointStamped()
-
                                 punto_camera.header.frame_id = 'camera_rgb_optical_frame'
-
                                 punto_camera.point.x = float(tvec[0][0])
-
                                 punto_camera.point.y = float(tvec[1][0])
-
                                 punto_camera.point.z = float(tvec[2][0])
-
                                 punto_mappa = do_transform_point(punto_camera, trans)
-
                                 map_x, map_y = punto_mappa.point.x, punto_mappa.point.y
 
-                                # CASO 1: È la chiave che stiamo cercando!
+                                # CASO 1: identificazione chiave che stiamo cercando!
 
                                 if marker_id == self.chiave_target:
 
                                     if self.stato_corrente == RobotState.EXPLORING:
-
                                         self.set_explore_state(False)
-
                                         self.stato_corrente = RobotState.APPROACHING_KEY
-
                                         self.go_to_key(map_x, map_y)
-
                                         break
 
                                     elif self.stato_corrente == RobotState.APPROACHING_KEY:
 
                                         if distanza_metri <= 0.65:
-
                                             self.raccogli_chiave()
-
                                             break
 
-                                # CASO 2: Non è la chiave che cerco ORA, la salvo in memoria!
+                                # CASO 2: Non è la chiave che cerco, la salvo in memoria!
 
                                 else:
 
                                     # Se non l'ho ancora salvata, la memorizzo per il futuro
-
                                     if marker_id > self.chiave_target and marker_id not in self.mappa_chiavi:
 
                                         self.mappa_chiavi[marker_id] = (map_x, map_y)
-
                                         self.get_logger().info(f" CHIAVE {marker_id} avvistata! Memorizzo coordinate (X:{map_x:.2f}, Y:{map_y:.2f}) per il futuro.")
 
                             except Exception as e:
@@ -279,11 +270,8 @@ class MazeSolverNode(Node):
 def main(args=None):
 
     rclpy.init(args=args)
-
     node = MazeSolverNode()
-
     rclpy.spin(node)
-
     rclpy.shutdown()
 
 if __name__ == '__main__':

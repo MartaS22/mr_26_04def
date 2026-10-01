@@ -69,17 +69,14 @@ include /ros_ws/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_
 /ros_ws/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs
 /ros_ws/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/build.rs
 /ros_ws/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/Cargo.toml
-/ros_ws/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/msg.rs
-/ros_ws/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/msg/rmw.rs
-/ros_ws/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/srv.rs
-/ros_ws/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/srv/rmw.rs
-/ros_ws/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/action.rs
-/ros_ws/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/action/rmw.rs
 
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/lib/rosidl_generator_rs/rosidl_generator_rs
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_rs/__init__.py
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/action.rs.em
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/action/rmw.rs.em
+rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/build.rs.em
+rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/Cargo.toml.em
+rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/lib.rs.em
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/msg.rs.em
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/msg/rmw.rs.em
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/srv.rs.em
@@ -88,13 +85,6 @@ rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/templates/msg_rmw.rs.em
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/templates/srv_idiomatic.rs.em
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/templates/srv_rmw.rs.em
-rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: rosidl_adapter/turtlebot3_msgs/msg/SensorState.idl
-rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: rosidl_adapter/turtlebot3_msgs/msg/Sound.idl
-rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: rosidl_adapter/turtlebot3_msgs/msg/VersionInfo.idl
-rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: rosidl_adapter/turtlebot3_msgs/srv/Sound.idl
-rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: rosidl_adapter/turtlebot3_msgs/srv/Dqn.idl
-rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: rosidl_adapter/turtlebot3_msgs/srv/Goal.idl
-rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: rosidl_adapter/turtlebot3_msgs/action/Patrol.idl
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: rosidl_adapter/turtlebot3_msgs/msg/SensorState.idl
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: rosidl_adapter/turtlebot3_msgs/msg/Sound.idl
 rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs: rosidl_adapter/turtlebot3_msgs/msg/VersionInfo.idl
@@ -182,33 +172,9 @@ rosidl_generator_rs/turtlebot3_msgs/rust/build.rs: rosidl_generator_rs/turtlebot
 rosidl_generator_rs/turtlebot3_msgs/rust/Cargo.toml: rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/turtlebot3_msgs/rust/Cargo.toml
 
-rosidl_generator_rs/turtlebot3_msgs/rust/src/msg.rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/turtlebot3_msgs/rust/src/msg.rs
-
-rosidl_generator_rs/turtlebot3_msgs/rust/src/msg/rmw.rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/turtlebot3_msgs/rust/src/msg/rmw.rs
-
-rosidl_generator_rs/turtlebot3_msgs/rust/src/srv.rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/turtlebot3_msgs/rust/src/srv.rs
-
-rosidl_generator_rs/turtlebot3_msgs/rust/src/srv/rmw.rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/turtlebot3_msgs/rust/src/srv/rmw.rs
-
-rosidl_generator_rs/turtlebot3_msgs/rust/src/action.rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/turtlebot3_msgs/rust/src/action.rs
-
-rosidl_generator_rs/turtlebot3_msgs/rust/src/action/rmw.rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/turtlebot3_msgs/rust/src/action/rmw.rs
-
 turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/Cargo.toml
 turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/build.rs
-turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/action.rs
-turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/action/rmw.rs
 turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/lib.rs
-turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/msg.rs
-turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/msg/rmw.rs
-turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/srv.rs
-turtlebot3_msgs__rs: rosidl_generator_rs/turtlebot3_msgs/rust/src/srv/rmw.rs
 turtlebot3_msgs__rs: /ros_ws/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs
 turtlebot3_msgs__rs: /ros_ws/build/turtlebot3_msgs/turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs.dir/build.make
 .PHONY : turtlebot3_msgs__rs

@@ -78,7 +78,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_sdk-4.0.5-py3.12.egg-info" TYPE DIRECTORY FILES "/ros_ws/build/dynamixel_sdk/ament_cmake_python/dynamixel_sdk/dynamixel_sdk.egg-info/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_sdk-4.1.0-py3.12.egg-info" TYPE DIRECTORY FILES "/ros_ws/build/dynamixel_sdk/ament_cmake_python/dynamixel_sdk/dynamixel_sdk.egg-info/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -94,7 +94,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.5-py3.12.egg-info" TYPE DIRECTORY FILES "/ros_ws/build/dynamixel_sdk/ament_cmake_python/dynamixel_easy_sdk/dynamixel_easy_sdk.egg-info/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_easy_sdk-4.1.0-py3.12.egg-info" TYPE DIRECTORY FILES "/ros_ws/build/dynamixel_sdk/ament_cmake_python/dynamixel_easy_sdk/dynamixel_easy_sdk.egg-info/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

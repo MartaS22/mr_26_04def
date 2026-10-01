@@ -69,15 +69,14 @@ include /ros_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_inter
 /ros_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__rs/CMakeFiles/dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs
 /ros_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__rs/CMakeFiles/dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/build.rs
 /ros_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__rs/CMakeFiles/dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/Cargo.toml
-/ros_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__rs/CMakeFiles/dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/msg.rs
-/ros_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__rs/CMakeFiles/dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/msg/rmw.rs
-/ros_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__rs/CMakeFiles/dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/srv.rs
-/ros_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__rs/CMakeFiles/dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/srv/rmw.rs
 
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/lib/rosidl_generator_rs/rosidl_generator_rs
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_rs/__init__.py
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/action.rs.em
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/action/rmw.rs.em
+rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/build.rs.em
+rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/Cargo.toml.em
+rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/lib.rs.em
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/msg.rs.em
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/msg/rmw.rs.em
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/srv.rs.em
@@ -86,8 +85,6 @@ rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/ja
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/templates/msg_rmw.rs.em
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/templates/srv_idiomatic.rs.em
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/share/rosidl_generator_rs/resource/templates/srv_rmw.rs.em
-rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: rosidl_adapter/dynamixel_sdk_custom_interfaces/msg/SetPosition.idl
-rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/GetPosition.idl
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: rosidl_adapter/dynamixel_sdk_custom_interfaces/msg/SetPosition.idl
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: rosidl_adapter/dynamixel_sdk_custom_interfaces/srv/GetPosition.idl
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
@@ -102,26 +99,10 @@ rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/build.rs: rosidl_genera
 rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/Cargo.toml: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/Cargo.toml
 
-rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/msg.rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/msg.rs
-
-rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/msg/rmw.rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/msg/rmw.rs
-
-rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/srv.rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/srv.rs
-
-rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/srv/rmw.rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/srv/rmw.rs
-
 dynamixel_sdk_custom_interfaces__rs: /ros_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__rs/CMakeFiles/dynamixel_sdk_custom_interfaces__rs
 dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/Cargo.toml
 dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/build.rs
 dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/lib.rs
-dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/msg.rs
-dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/msg/rmw.rs
-dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/srv.rs
-dynamixel_sdk_custom_interfaces__rs: rosidl_generator_rs/dynamixel_sdk_custom_interfaces/rust/src/srv/rmw.rs
 dynamixel_sdk_custom_interfaces__rs: /ros_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__rs/CMakeFiles/dynamixel_sdk_custom_interfaces__rs.dir/build.make
 .PHONY : dynamixel_sdk_custom_interfaces__rs
 

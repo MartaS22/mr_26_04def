@@ -34,10 +34,19 @@ def generate_launch_description():
             )
         ]
     )
+
+    # 4. Avvio data_logger per registrare i dati
+    start_logger = Node(
+        package='turtlebot_logic',
+        executable='data_logger',
+        name='data_logger_node',
+        output='screen',
+    )
  
     return LaunchDescription([
         start_gazebo,
         start_nav,
-        start_explore
+        start_explore,
+        start_logger,
     ])
  

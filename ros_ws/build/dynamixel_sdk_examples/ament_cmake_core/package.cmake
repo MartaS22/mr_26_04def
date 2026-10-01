@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "dynamixel_sdk_examples")
-set(dynamixel_sdk_examples_VERSION "4.0.5")
+set(dynamixel_sdk_examples_VERSION "4.1.0")
 set(dynamixel_sdk_examples_MAINTAINER "Pyo <pyo@robotis.com>")
 set(dynamixel_sdk_examples_BUILD_DEPENDS "rclcpp" "rclpy" "dynamixel_sdk" "dynamixel_sdk_custom_interfaces")
 set(dynamixel_sdk_examples_BUILDTOOL_DEPENDS "ament_cmake" "ament_cmake_python")

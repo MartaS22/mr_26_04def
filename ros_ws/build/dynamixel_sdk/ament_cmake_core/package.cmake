@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "dynamixel_sdk")
-set(dynamixel_sdk_VERSION "4.0.5")
+set(dynamixel_sdk_VERSION "4.1.0")
 set(dynamixel_sdk_MAINTAINER "Pyo <pyo@robotis.com>")
 set(dynamixel_sdk_BUILD_DEPENDS )
 set(dynamixel_sdk_BUILDTOOL_DEPENDS "ament_cmake" "ament_cmake_python")

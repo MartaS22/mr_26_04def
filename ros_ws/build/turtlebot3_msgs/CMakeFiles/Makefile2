@@ -194,6 +194,7 @@ CMakeFiles/turtlebot3_msgs_uninstall.dir/clean:
 # Target rules for target CMakeFiles/turtlebot3_msgs.dir
 
 # All Build rule for target.
+CMakeFiles/turtlebot3_msgs.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/all
 CMakeFiles/turtlebot3_msgs.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/all
 CMakeFiles/turtlebot3_msgs.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_cpp.dir/all
 CMakeFiles/turtlebot3_msgs.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_typesupport_cpp.dir/all
@@ -202,7 +203,6 @@ CMakeFiles/turtlebot3_msgs.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_generator
 CMakeFiles/turtlebot3_msgs.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_c.dir/all
 CMakeFiles/turtlebot3_msgs.dir/all: CMakeFiles/turtlebot3_msgs__cpp.dir/all
 CMakeFiles/turtlebot3_msgs.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.dir/all
-CMakeFiles/turtlebot3_msgs.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/all
 CMakeFiles/turtlebot3_msgs.dir/all: turtlebot3_msgs__rs/CMakeFiles/turtlebot3_msgs__rs.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_msgs.dir/build.make CMakeFiles/turtlebot3_msgs.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_msgs.dir/build.make CMakeFiles/turtlebot3_msgs.dir/build
@@ -576,11 +576,11 @@ CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_fastrtps_c.dir/clean:
 # Target rules for target CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.dir
 
 # All Build rule for target.
+CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/all
 CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_typesupport_c.dir/all
 CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_generator_py.dir/all
 CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.dir/all: turtlebot3_msgs__py/CMakeFiles/turtlebot3_msgs__py.dir/all
 CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_generator_c.dir/all
-CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/turtlebot3_msgs__rosidl_typesupport_introspection_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/ros_ws/build/turtlebot3_msgs/CMakeFiles --progress-num=94,95 "Built target turtlebot3_msgs_s__rosidl_typesupport_introspection_c"

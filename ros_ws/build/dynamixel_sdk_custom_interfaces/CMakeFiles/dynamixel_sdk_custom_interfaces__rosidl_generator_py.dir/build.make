@@ -121,7 +121,7 @@ libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/l
 libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_cpp.so
-libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/libfastcdr.so.2.2.7
+libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/libfastcdr.so.2.2.8
 libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/librmw.so
 libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/librosidl_dynamic_typesupport.so
 libdynamixel_sdk_custom_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so

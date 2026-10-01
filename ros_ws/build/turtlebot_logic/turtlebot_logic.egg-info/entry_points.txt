@@ -1,2 +1,3 @@
 [console_scripts]
+data_logger = turtlebot_logic.data_logger:main
 maze_solver = turtlebot_logic.maze_solver:main

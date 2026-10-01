@@ -17,4 +17,5 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 turtlebot_logic/__init__.py
+turtlebot_logic/data_logger.py
 turtlebot_logic/maze_solver.py
