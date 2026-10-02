@@ -42,17 +42,19 @@ Non sono richieste specifiche configurazioni hardware aggiuntive, né versioni l
 ### 1. Build e configurazione iniziale
 Il progetto sfrutta Docker per installare automaticamente tutte le dipendenze e pre-compilare il workspace (`colcon build`) durante la creazione dell'immagine, risultando immediatamente pronto all'uso al primo avvio.
  
-Posizionarsi nella directory radice del progetto (`mr_26_04def`) e avviare il processo di costruzione dell'immagine:
-"```bash
+Posizionarsi nella directory radice del progetto (`mr_26_04def`) e avviare all'interno del docker workspace (`docker_ws`) il processo di costruzione dell'immagine:
+"
 ./build.sh
 
-(esecuzione di colcon build è stata integrata nel Dockerfile, non è necessario compilarlo manualmente in seguito)
+Riposizionarsi all'interno della directory radice del progetto (`mr_26_04def`) per effettuare la clonazione delle repository tramite lo script dedicato:
+./clone_repos.sh
 
 Accedere al container tramite lo script dedicato:
 ./run.sh
 
 Una volta all'interno del container, avviare l'infrastruttura di base (Gazebo, Rviz, SLAM, Nav2 ed Explore Lite) utilizzando il launch file master:
-
+colcon build
+source install/setup.bash
 ros2 launch turtlebot_logic main.launch.py
 
 I vari nodi si avvieranno sequenzialmente per non sovraccaricare il sistema. Attendere circa 15 secondi affinchè Rviz mostri il robot, le costmap e la mappa in tempo reale.

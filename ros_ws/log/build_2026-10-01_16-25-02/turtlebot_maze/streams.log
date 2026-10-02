@@ -1,0 +1,44 @@
+[0.231s] Invoking command in '/ros_ws/build/turtlebot_maze': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --build /ros_ws/build/turtlebot_maze -- -j28 -l28
+[0.303s] Invoked command in '/ros_ws/build/turtlebot_maze' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --build /ros_ws/build/turtlebot_maze -- -j28 -l28
+[0.303s] Invoking command in '/ros_ws/build/turtlebot_maze': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --install /ros_ws/build/turtlebot_maze
+[0.311s] -- Install configuration: ""
+[0.311s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/launch
+[0.311s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/launch/maze_sim.launch.py
+[0.311s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models
+[0.311s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/marker_2.png:Zone.Identifier
+[0.311s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/marker_3.png:Zone.Identifier
+[0.311s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/aruco_textures
+[0.311s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/aruco_textures/marker_3.png
+[0.311s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/aruco_textures/marker_5.png
+[0.311s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/aruco_textures/marker_1.png
+[0.311s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/aruco_textures/marker_4.png
+[0.311s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/aruco_textures/marker_1.png:Zone.Identifier
+[0.311s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/aruco_textures/marker_8.png
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/aruco_textures/marker_9.png
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/aruco_textures/marker_2.png
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/aruco_textures/marker_7.png
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/aruco_textures/marker_6.png
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/marker_8.png:Zone.Identifier
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/marker_7.png:Zone.Identifier
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/marker_6.png:Zone.Identifier
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/marker_9.png:Zone.Identifier
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/marker_4.png:Zone.Identifier
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/models/marker_5.png:Zone.Identifier
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/worlds
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/worlds/maze.sdf
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/ament_index/resource_index/package_run_dependencies/turtlebot_maze
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/ament_index/resource_index/parent_prefix_path/turtlebot_maze
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/environment/ament_prefix_path.sh
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/environment/ament_prefix_path.dsv
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/environment/path.sh
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/environment/path.dsv
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/local_setup.bash
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/local_setup.sh
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/local_setup.zsh
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/local_setup.dsv
+[0.312s] -- Installing: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/package.dsv
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/ament_index/resource_index/packages/turtlebot_maze
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/cmake/turtlebot_mazeConfig.cmake
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/cmake/turtlebot_mazeConfig-version.cmake
+[0.312s] -- Up-to-date: /ros_ws/install/turtlebot_maze/share/turtlebot_maze/package.xml
+[0.338s] Invoked command in '/ros_ws/build/turtlebot_maze' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros_ws/install/turtlebot_logic:/ros_ws/install/turtlebot3_teleop:/ros_ws/install/turtlebot3_example:/opt/ros/jazzy /usr/bin/cmake --install /ros_ws/build/turtlebot_maze

@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from nav_msgs.msg import Odometry
+from nav_msgs.msg import Odometry, OccupancyGrid
 from sensor_msgs.msg import LaserScan, Image
 from geometry_msgs.msg import Twist
 from std_msgs.msg import String
@@ -11,7 +11,7 @@ from datetime import datetime
 
 class DataLoggerNode(Node):
     
-    # 1. CORRETTO: Aggiunti i doppi trattini bassi __init__
+   
     def __init__(self):
         super().__init__('data_logger_node')
         self.get_logger().info("Avvio Data Logger: Registrazione missione in corso...")
@@ -24,6 +24,7 @@ class DataLoggerNode(Node):
         self.min_lidar_distance = 0.0
         self.last_camera_timestamp = "N/A"
         self.keys_logged = ""
+        self.explored_percentage=0.0
         
         # Sottoscrizioni ai sensori e al movimento
         self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
@@ -33,6 +34,9 @@ class DataLoggerNode(Node):
         
         # Sottoscrizione per ricevere i dati delle chiavi dal maze_solver
         self.create_subscription(String, '/maze_keys_log', self.keys_callback, 10)
+
+        # Sottoscrizione alla SLAM per calcolare la mappa esplorata
+        self.create_subscription(OccupancyGrid, '/map', self.map_callback,1)
 
         # Preparazione del file CSV di output
         log_dir = "/ros_ws/log_missione"
@@ -52,7 +56,8 @@ class DataLoggerNode(Node):
             'Velocita_Angolare', 
             'Ostacolo_Piu_Vicino_Lidar(m)', 
             'Stato_Telecamera',
-            'Eventi_Chiavi'
+            'Eventi_Chiavi',
+            'Esplorazione_Completata(%)'
         ])
 
         # Timer: Scrive i dati sul file 2 volte al secondo (2.0 Hz)
@@ -84,6 +89,24 @@ class DataLoggerNode(Node):
         self.keys_logged = msg.data
         self.get_logger().info(f"LOG Salvato: {msg.data}")
 
+    def map_callback(self,msg):
+        res = msg.info.resolution
+        total_cells = len(msg.data)
+
+        unknown_cells = msg.data.count(-1)
+
+        explored_cells = total_cells - unknown_cells
+
+        explored_area_mq = explored_cells * (res * res)
+
+        area_labirinto_mq = 256.0
+
+        # Calcola la percentuale mantenendola entro il 100%
+ 
+        perc = (explored_area_mq / area_labirinto_mq) * 100.0
+ 
+        self.explored_percentage = min(perc, 100.0)
+
     def save_data_to_csv(self):
         # Scrive la riga nel file CSV
         current_time = datetime.now().strftime("%H:%M:%S.%f")[:-3]
@@ -96,7 +119,8 @@ class DataLoggerNode(Node):
             f"{self.current_v_ang:.3f}",
             f"{self.min_lidar_distance:.3f}",
             self.last_camera_timestamp,
-            self.keys_logged
+            self.keys_logged,
+            f"{self.explored_percentage:.2f}"
         ])
         
         # Pulisce l'evento chiave dopo averlo scritto, per non ripeterlo
