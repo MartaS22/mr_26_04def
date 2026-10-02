@@ -86,8 +86,10 @@ class DataLoggerNode(Node):
 
     def keys_callback(self, msg):
         # Riceve la posizione della chiave dal maze_solver.py
-        self.keys_logged = msg.data
-        self.get_logger().info(f"LOG Salvato: {msg.data}")
+
+        self.keys_logged = f"{msg.data} [X: {self.current_x:.3f}, Y: {self.current_y:.3f}]"
+ 
+        self.get_logger().info(f"LOG Salvato: {self.keys_logged}")
 
     def map_callback(self,msg):
         res = msg.info.resolution
@@ -126,6 +128,10 @@ class DataLoggerNode(Node):
         # Pulisce l'evento chiave dopo averlo scritto, per non ripeterlo
         if self.keys_logged != "":
             self.keys_logged = ""
+
+        
+        # Forza il salvataggio immediato su disco fisso
+        self.file.flush()
 
     def destroy_node(self):
         # Chiude il file in modo sicuro quando spegni ROS
